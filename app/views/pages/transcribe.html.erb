@@ -1,0 +1,25 @@
+<div data-controller="transcribe">
+  <div class="controls">
+    <button data-transcribe-target="startBtn" data-action="click->transcribe#start">▶ Start Listening</button>
+    <button data-transcribe-target="stopBtn" data-action="click->transcribe#stop" disabled>⏹ Stop Listening</button>
+  </div>
+
+  <div class="cards">
+    <div class="card live">
+      <h2>💬 Live Transcription</h2>
+      <div data-transcribe-target="live" class="text-box"></div>
+    </div>
+
+    <div class="card full">
+      <h2>📝 Full Transcription</h2>
+      <div data-transcribe-target="final" class="text-box"></div>
+    </div>
+
+    <div class="card summary">
+      <h2>📄 Summary
+        <button data-action="click->transcribe#toggleSummary" class="toggle-btn">▼</button>
+      </h2>
+      <div data-transcribe-target="summary" class="text-box summary-box"></div>
+    </div>
+  </div>
+</div>

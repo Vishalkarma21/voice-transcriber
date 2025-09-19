@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Voice Transcriber</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <!-- Link to our custom CSS -->
+    <%= stylesheet_link_tag "application", media: "all", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+  <body>
+    <header class="header">
+      <h1>🎙️ Voice Transcriber & Summarizer</h1>
+      <p>Speak naturally and get live transcription and instant summaries.</p>
+    </header>
+
+    <main class="container">
+      <%= yield %>
+    </main>
+  </body>
+</html>
